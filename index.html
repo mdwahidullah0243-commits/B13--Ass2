@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave | Podcast Website</title>
+
+    <!-- CDN: Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./stylesheet/techwave.css">
+</head>
+
+<body class="bg-[#1A0B2E] font-inter">
+    <!-- Part: <header> -->
+    <header>
+        <!-- Section => [navbar] -->
+        <nav class="text-white w-3/4 mx-auto sm:max-lg:w-4/5 flex justify-between items-center">
+
+            <!-- brand-logo -->
+            <div class="text-3xl font-extrabold cursor-pointer sm:max-lg:text-[35px] lg:text-6xl">
+                <span class="stroke-text">Tech</span><span
+                    class="bg-linear-to-tr from-[#f7e93f] via-[#fb09b4] via-35% to-[#9100f8] to-60% bg-clip-text text-transparent stroke-text">Wave</span>
+            </div>
+
+            <!-- navbar-menu -->
+            <div class="relative group">
+                <div class="cursor-pointer sm:hidden">
+                    <img src="./assets/hamburger-menu.png" alt="">
+                </div>
+
+                <ul
+                    class="text-base font-medium absolute top-[110%] -right-2.5 bg-[#292929] sm:bg-transparent rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible scale-y-0 group-hover:scale-y-100 origin-top-right transition duration-200 ease-linear sm:static sm:rounded-none sm:opacity-100 sm:visible sm:scale-y-100 sm:flex sm:max-lg:gap-4 lg:gap-5 sm:max-lg:bg-transparent lg:pt-3">
+                    <li class="cursor-pointer px-4 py-2 sm:max-lg:p-0 hover:bg-gray-900 sm:hover:bg-transparent hover:text-cyan-600 text-center">About</li>
+                    <li class="cursor-pointer px-4 py-2 sm:max-lg:p-0 hover:bg-gray-900 sm:hover:bg-transparent hover:text-cyan-600 text-center">Episodes</li>
+                    <li class="cursor-pointer px-4 py-2 sm:max-lg:p-0 hover:bg-gray-900 sm:hover:bg-transparent hover:text-cyan-600 text-center">Host</li>
+                </ul>
+            </div>
+
+            <!-- navbar-button -->
+            <div class="hidden sm:block">
+                <button class="bg-linear-[47.64deg] from-[#f7e93f] via-[#fb09b4 via-35% to-[#9100f8] to-60% border-none rounded-[40px] py-2 ps-4 font-semibold">
+                    <span class="pe-9 bg-[url('./assets/right-arrow.png')] bg-no-repeat bg-position-[75px_center] bg-size-[20px] cursor-pointer">Subscribe</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
