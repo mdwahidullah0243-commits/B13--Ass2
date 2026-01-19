@@ -17,7 +17,7 @@
     <!-- Part: <header> -->
     <header>
         <!-- Section => [navbar] -->
-        <nav class="text-white w-3/4 mx-auto sm:max-lg:w-4/5 flex justify-between items-center">
+        <nav class="text-white py-3 w-3/4 mx-auto sm:max-lg:w-4/5 flex justify-between items-center">
 
             <!-- brand-logo -->
             <div class="text-3xl font-extrabold cursor-pointer sm:max-lg:text-[35px] lg:text-6xl">
@@ -32,20 +32,67 @@
                 </div>
 
                 <ul
-                    class="text-base font-medium absolute top-[110%] -right-2.5 bg-[#292929] sm:bg-transparent rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible scale-y-0 group-hover:scale-y-100 origin-top-right transition duration-200 ease-linear sm:static sm:rounded-none sm:opacity-100 sm:visible sm:scale-y-100 sm:flex sm:max-lg:gap-4 lg:gap-5 sm:max-lg:bg-transparent lg:pt-3">
-                    <li class="cursor-pointer px-4 py-2 sm:max-lg:p-0 hover:bg-gray-900 sm:hover:bg-transparent hover:text-cyan-600 text-center">About</li>
-                    <li class="cursor-pointer px-4 py-2 sm:max-lg:p-0 hover:bg-gray-900 sm:hover:bg-transparent hover:text-cyan-600 text-center">Episodes</li>
-                    <li class="cursor-pointer px-4 py-2 sm:max-lg:p-0 hover:bg-gray-900 sm:hover:bg-transparent hover:text-cyan-600 text-center">Host</li>
+                    class="text-base font-medium absolute top-[110%] -right-2.5 bg-[#292929] rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible scale-y-0 group-hover:scale-y-100 origin-top-right transition duration-200 ease-linear sm:static sm:bg-transparent sm:opacity-100 sm:visible sm:scale-y-100 sm:flex sm:max-lg:gap-4 lg:gap-5 lg:pt-3">
+                    <li
+                        class="cursor-pointer px-4 py-2 sm:max-lg:p-0 hover:bg-gray-900 sm:hover:bg-transparent hover:text-cyan-600 text-center">
+                        About</li>
+                    <li
+                        class="cursor-pointer px-4 py-2 sm:max-lg:p-0 hover:bg-gray-900 sm:hover:bg-transparent hover:text-cyan-600 text-center">
+                        Episodes</li>
+                    <li
+                        class="cursor-pointer px-4 py-2 sm:max-lg:p-0 hover:bg-gray-900 sm:hover:bg-transparent hover:text-cyan-600 text-center">
+                        Host</li>
                 </ul>
             </div>
 
             <!-- navbar-button -->
             <div class="hidden sm:block">
-                <button class="bg-linear-[47.64deg] from-[#f7e93f] via-[#fb09b4 via-35% to-[#9100f8] to-60% border-none rounded-[40px] py-2 ps-4 font-semibold">
-                    <span class="pe-9 bg-[url('./assets/right-arrow.png')] bg-no-repeat bg-position-[75px_center] bg-size-[20px] cursor-pointer">Subscribe</span>
+                <button
+                    class="bg-linear-[47.64deg] from-[#f7e93f] via-[#fb09b4 via-35% to-[#9100f8] to-60% border-none rounded-[40px] py-2 ps-4 font-semibold">
+                    <span
+                        class="pe-9 bg-[url('./assets/right-arrow.png')] bg-no-repeat bg-position-[75px_center] bg-size-[20px] cursor-pointer">Subscribe</span>
                 </button>
             </div>
         </nav>
+
+        <!-- Section => [banner] -->
+        <section class="relative border-t border-t-[#fffefe38]">
+            <!-- banner-img -->
+            <img src="./assets/hero-bg.png" alt="" class="pt-20 pb-40">
+
+            <!-- hero-circle -->
+            <div
+                class="absolute top-[10%] left-[30%] w-[40%] sm:max-md:top-[15%] sm:max-md:left-[33%] sm:max-md:w-[35%] md:max-lg:w-[30%] md:max-lg:left-[35%] md:max-lg:top-[15%] lg:left-[38%] lg:top-[15%] lg:w-[25%]">
+                <img src="./assets/hero-circle.png" alt="" class="">
+                <div
+                    class="absolute top-[8%] right-0 bg-[#00FF88] text-[#1A0B2E] text-base rounded-[45px] py-2 px-4 text-center font-semibold shadow-[0px_3px_27px_0px_#00ff88]">
+                    NEW</div>
+                <div
+                    class="absolute inset-x-22 inset-y-[30%] sm:max-md:inset-x-[36%] sm:max-md:inset-y-14 sm:max-md:w-[27%] md:max-lg:w-[25%] md:max-lg:inset-x-[37%] lg:w-[22%] lg:inset-x-[38%] lg:inset-y-[33%]">
+                    <img src="./assets/microphone.png" alt="">
+                </div>
+            </div>
+
+            <!-- title, description & button -->
+            <div
+                class="text-[#FFFFFF] absolute top-[62%] left-[3%] text-center sm:max-md:left-[8%] md:max-lg:left-[18%] lg:left-[27%] lg:top-[55%]">
+                <h2 class="text-[40px] font-extrabold">TechWave</h2>
+                <p class="text-xl mt-2 font-normal">
+                    Your daily dose of tech insights, productivity hacks, and personal growth
+                </p>
+                <div class="mt-6 flex justify-center gap-3">
+                    <button
+                        class="bg-linear-[47.64deg] from-[#f7e93f] via-[#fb09b4 via-35% to-[#9100f8] to-60% rounded-[40px] py-2 pe-4">
+                        <span
+                            class="ps-10 bg-[url('./assets/spotify.png')] bg-no-repeat bg-position-[15px_center] bg-size-[18px] text-base font-semibold cursor-pointer">Listen
+                            on Spotify</span>
+                    </button>
+
+                    <button
+                        class="border border-[#00FF88] rounded-[40px] py-2 pe-4 ps-10 bg-[url('./assets/message.png')] bg-no-repeat bg-position-[15px_center] bg-size-[18px] text-base font-semibold text-[#00FF88] cursor-pointer">Subscribe</button>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 
