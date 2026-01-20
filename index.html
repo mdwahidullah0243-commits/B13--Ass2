@@ -15,7 +15,7 @@
 
 <body class="bg-[#1A0B2E] font-inter">
     <!-- Part: <header> -->
-    <header class="">
+    <header class="hidden">
         <!-- Section => [navbar] -->
         <nav class="text-white py-3 w-3/4 mx-auto sm:max-lg:w-4/5 flex justify-between items-center">
 
@@ -96,7 +96,7 @@
     </header>
 
     <!-- Part: <main> -->
-    <main>
+    <main class="hidden">
         <!-- Section => [about] -->
         <section class=" w-3/4 mx-auto">
 
@@ -296,6 +296,57 @@
             </div>
         </section>
     </main>
+
+    <!-- Wrong Part: <footer> -->
+    <!-- <footer class="h-[400px] bg-[url('./assets/footer-bg.png')] bg-no-repeat bg-auto flex justify-center items-center">
+    </footer> -->
+
+    <!-- Part: <footer> -->
+    <footer
+        class="min-h-[200px] sm:min-h-[250px] lg:min-h-[300px] bg-[url('./assets/footer-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-center">
+        
+        <div class="text-center flex flex-col items-center gap-5 sm:mt-5 lg:gap-4">
+
+            <!-- Logo -->
+            <div class="text-white text-4xl font-extrabold cursor-pointer sm:text-5xl lg:text-6xl">
+                <span>Tech</span>
+                <span
+                    class="bg-linear-to-r from-[#f7e93f] via-[#fb09b4] via-35% to-[#9100f8] to-60% bg-clip-text text-transparent">
+                    Wave
+                </span>
+            </div>
+
+            <!-- Social Links -->
+            <div class="w-2/3 sm:w-4/5 lg:w-full flex flex-wrap justify-center gap-4">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/spotify.png" class="w-6 h-6 lg:w-5 lg:h-5" alt="">
+                    <span class="text-[#A89EB4]">Spotify</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="./assets/apple-podcast.png" class="w-6 h-6 lg:w-5 lg:h-5" alt="">
+                    <span class="text-[#A89EB4]">Apple Podcasts</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="./assets/youtube-podcast.png" class="w-6 h-6 lg:w-5 lg:h-5" alt="">
+                    <span class="text-[#A89EB4]">YouTube</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="./assets/twitter.png" class="w-6 h-6 lg:w-5 lg:h-5" alt="">
+                    <span class="text-[#A89EB4]">Twitter</span>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-[#A89EB4] text-sm">
+                © 2026 TechWave Podcast. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
 </body>
 
 </html>
