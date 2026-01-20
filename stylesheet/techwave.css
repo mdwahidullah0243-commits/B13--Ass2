@@ -1,3 +1,57 @@
+/* Stroke for brand logo */
 .stroke-text {
   -webkit-text-stroke: 1px black;
+}
+
+/* navbar button */
+.offer-btn {
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.35);
+  animation: floatPulse 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.subs-text {
+  display: inline-block;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* animation */
+@keyframes floatPulse {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.35);
+  }
+
+  50% {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 28px rgba(139, 92, 246, 0.5);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.35);
+  }
+}
+
+
+/* New badge of hero-circle */
+.new-badge {
+  animation: badge 3s ease-in-out infinite alternate-reverse;
+  transition: animation 3s ease-in-out;
+}
+
+/* animation */
+@keyframes badge {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
 }
